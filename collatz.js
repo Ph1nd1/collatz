@@ -1,5 +1,8 @@
-function collatzSteps(rangeLimit) {
+// call: node collatz.js <argument>
+
+function collatzSteps() {
     let stepCount = 0;
+    let rangeLimit = parseInt(process.argv[2])
     // positive numbers
     if (rangeLimit < 1) return    
 
@@ -17,5 +20,4 @@ function collatzSteps(rangeLimit) {
     // no. of steps
     return stepCount
 }
-console.log(collatzSteps(8))
-
+console.log(collatzSteps())
